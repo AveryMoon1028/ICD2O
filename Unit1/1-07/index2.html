@@ -2,43 +2,63 @@
 <!--ICS20 Unit 1 05 HTML Style Guide-->
 <html lang="en-ca">
 <head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <meta charset="utf 8">
   <meta name="description" content="My first webpage, with proper style">
   <meta name="keywords" content="trh, icd20">
   <meta name="author" content="Ms.Warriner">
   <meta name="viewport" content="width=devoce-width, initial scale=1,0">
   <title>My first webpage, with proper style</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
+  <!-- Simple Textfield -->
+  <form action="#">
+    <div class="mdl-textfield mdl-js-textfield">
+      <input class="mdl-textfield__input" type="text" id="sample1">
+      <label class="mdl-textfield__label" for="sample1">Text...</label>
+    </div>
+  </form>
+  <form action="#">
+    <div class="mdl-textfield mdl-js-textfield">
+      <input class="mdl-textfield__input" type="text" id="sample1">
+      <label class="mdl-textfield__label" for="sample1">Text...</label>
+    </div>
+  </form>
+  <i class="material-icons">add</i>
+  </button>
+  <!-- Simple list -->
+  <style>
+    .demo-list-item {
+      width: 300px;
+    }
+  </style>
+  
+  <ul class="demo-list-item mdl-list">
+    <li class="mdl-list__item">
+      <span class="mdl-list__item-primary-content">
+        Bryan Cranston
+      </span>
+    </li>
+    <li class="mdl-list__item">
+      <span class="mdl-list__item-primary-content">
+        Aaron Paul
+      </span>
+    </li>
+    <li class="mdl-list__item">
+      <span class="mdl-list__item-primary-content">
+        Bob Odenkirk
+      </span>
+    </li>
+  </ul>
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.purple-amber.min.css" />
 <body style="background-color:powderblue;">
   <h1 id="myheader">Style is important</h1>
   <p style="background-color: #ff00ff;">Proper HTML style is important</p>
   <img src="./images/HTML-style-guide.jpeg" alt="style">
-  <table>
-    <tr>
-      <th>Company</th>
-      <th>Contact</th>
-      <th>Country</th>
-    </tr>
-    <tr>
-      <td>Alfreds Futterkiste</td>
-      <td>Maria Anders</td>
-      <td>Germany</td>
-    </tr>
-    <tr>
-      <td>Centro comerical Moctezuma</td>
-      <td>Francisco Chang</td>
-      <td>Mexico</td>
-    </tr>
-  </table>
-  <d1>
-    <dt>Coffee</dt>
-    <dd>- black hot drink</dd>
-    <dt>Milk</dt>
-    <dd>- white cold drink</dd>
   </d1>
   <p>
     <a href="./cities.html">My cities page</a>
   </p>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"></button>
 </body>
 </html>
