@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Introducing Avery's hobby'">
+  <meta name="keywords" content="trh, icd20">
+  <meta name="author" content="Avery Moon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>My first webpage, with properstyle</title>
+  <link rel="icon" type="image/png" href="./Final/images/favicon.png">
+</head>
+<body style="background-color: rgb(192, 149, 240);">
+
+  <div style="width:100%; height:50px; border:solid 1px;">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">HTML5 Tutorial</span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="index.html" style="color:rgb(255, 255, 255)">Home</a>
+            <a class="mdl-navigation__link" href="page2.html" style="color:rgb(255, 255, 255)">Music</a>
+            <a class="mdl-navigation__link" href="" style="color:rgb(255, 255, 255)">Sports</a>
+          </nav>
+        </div>
+      </header>
+
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">HTML5 Tutorial</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="index.html">Home</a>
+          <a class="mdl-navigation__link" href="page2.html">Music</a>
+          <a class="mdl-navigation__link" href="page3.html">Sports</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h3 id="My-header">My hobby_Sports</h3>
+    <p style="background-color: rgb(255, 255, 255);">Sports: volleyball, soccer, basketball, baseball, tennis</p>
+    <img src="../Final/images/sports(2).jpg" alt="hobby">
+    <p>
+    <p style="background-color: rgb(255, 255, 255);">volleyball</p>
+    <img src="../Final/images/volleyball.jpg" alt="hobby">
+    <p>
+    <!-- Expandable Textfield -->
+    <form action="#">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="userInput">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" id="userInput">
+          <label class="mdl-textfield__label" for="userInput">Search...</label>
+        </div>
+      </div>
+    </form>
+
+    <!-- FAB search button -->
+    <button id="searchButton" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+      <i class="material-icons">search</i>
+    </button>
+
+    <button id="clearButton" class="mdl-button mdl-js-button">Clear</button>
+  </div>
+            <a href="./cities.html">More information</a>
+            </p>
+
+  <!-- JavaScript -->
+  <script>
+    const button = document.getElementById('searchButton');
+    const input = document.getElementById('userInput');
+
+    button.addEventListener('click', function () {
+      const q = (input.value || '').trim();
+      if (q) {
+        const url = 'https://www.google.com/search?q=' + encodeURIComponent(q);
+        window.open(url, '_blank');
+      }
+    });
+    const clearButton = document.getElementById('clearButton');
+    clearButton.addEventListener('click', function () {
+      input.value = '';
+    });
+  </script>
+</body>
+</html>

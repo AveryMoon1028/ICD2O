@@ -1,12 +1,14 @@
-body {
-  background-color: lightblue;
-}
-
-h1 {
-  color: rgb(0, 0, 0);
+#main-title {
+  font-family: 'Georgia', serif;
+  font-size: 48px;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 3px;
   text-align: center;
 }
 
-p {
-  font-family: verdana;
+.highlight {
+  background-color: yellow;
+  padding: 5px;
+  border-radius: 5px;
 }

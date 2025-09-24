@@ -11,7 +11,7 @@
   <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <title>My first webpage, with properstyle</title>
-  <link rel="icon" type="image/png" href="./image/favicons">
+  <link rel="icon" type="images/png" href="./images/favicons.png">
 </head>
 <body style="background-color: rgb(253, 253, 253);">
   [Go to Music page](page2.html)
@@ -22,33 +22,45 @@
           <span class="mdl-layout-title">HTML5 Tutorial</span>
           <div class="mdl-layout-spacer"></div>
           <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="" style="color:rgb(255, 255, 255)">Home</a>
-            <a class="mdl-navigation__link" href="" style="color:rgb(255, 255, 255)">music</a>
-            <a class="mdl-navigation__link" href="" style="color:rgb(255, 255, 255)">sport</a>
+            <a class="mdl-navigation__link" href="index.html" style="color:rgb(255, 255, 255)">Home</a>
+            <a class="mdl-navigation__link" href="page2.html" style="color:rgb(255, 255, 255)">music</a>
+            <a class="mdl-navigation__link" href="page3.html" style="color:rgb(255, 255, 255)">sport</a>
           </nav>
         </div>
       </header>
       <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">HTML5 Tutorial</span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Home</a>
-          <a href="page2.html">music</a>
-          <a class="mdl-navigation__link" href="">music</a>
-          <a class="mdl-navigation__link" href="">sport</a>
+          <a class="mdl-navigation__link" href="index.html">Home</a>
+          <a class="mdl-navigation__link" href="page2.html">music</a>
+          <a class="mdl-navigation__link" href="page3.html">sport</a>
         </nav>
       </div>
     </div>
   </div>
   <div>
-    <h1 id="My-header">My hobby</h1>
+    <h1 id="My-header">Welcome to my hobby webpage</h1>
     <p style="background-color: rgb(245, 243, 243);">Introducing my hobby_music and sports</p>
-    <p style="background-color: rgb(245, 243, 243);">A lot of people have their hobby. In this webpage, it will show you what Avery's hobby is.</p>
     <img src="../Final/images/download.jpg" alt="hobby">
     <p>
         <p style="background-color: rgb(245, 243, 243);">cooking</p>
     <img src="../Final/images/cooking.jpg" alt="hobby">
     </p>
-
+        <p style="background-color: rgb(245, 243, 243);">sports</p>
+    <img src="../Final/images/hobby-sports.jpg" alt="hobby">
+        </p>
+                <p style="background-color: rgb(245, 243, 243);">drawing</p>
+                <img src="../Final/images/drawing.jpg" alt="hobby">
+                </p>
+                <p style="background-color: rgb(245, 243, 243);">instruments</p>
+                <img src="../Final/images/instrument(1).jpg" alt="hobby">
+                </p>
+<ul>
+  <li>1. cooking</li>
+  <li>2. sports</li>
+  <li>3. drawing</li>
+  <li>4. instruments</li>
+</ul>
     <!-- Expandable Textfield -->
     <form action="#">
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
@@ -61,13 +73,49 @@
         </div>
       </div>
     </form>
-
+        <p style="background-color: rgb(245, 243, 243);">Search your hobby</p>
     <!-- FAB search button -->
     <button id="searchButton" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
       <i class="material-icons">search</i>
     </button>
 
     <button id="clearButton" class="mdl-button mdl-js-button">Clear</button>
+  </div>
+  <!-- Wide card with share menu button -->
+  <style>
+    .demo-card-wide.mdl-card {
+      width: 512px;
+    }
+  
+    .demo-card-wide>.mdl-card__title {
+      color: #fff;
+      height: 176px;
+      background: url('../Final/images/more information.jpg') center / cover;
+    }
+  
+    .demo-card-wide>.mdl-card__menu {
+      color: #7e7b7b;
+    }
+  </style>
+  
+  <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Welcome</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      Find your hobby.
+      This website makes you find your new hobby.
+    </div>
+  <a href="https://www.google.com" target="_blank"
+    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+    Get Started
+  </a>
+  </div>
+  <div class="mdl-card__menu">
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">share</i>
+    </button>
+  </div>
   </div>
         <a href="./cities.html">Information about me</a>
   <!-- JavaScript -->
