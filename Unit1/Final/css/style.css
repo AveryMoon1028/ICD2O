@@ -5,10 +5,12 @@
   font-weight: bold;
   letter-spacing: 3px;
   text-align: center;
-}
 
-.highlight {
-  background-color: yellow;
-  padding: 5px;
-  border-radius: 5px;
+  /* Shadows */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  /* for box-shadow */
+  padding: 10px 20px;
+  border-radius: 8px;
 }

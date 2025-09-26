@@ -2,7 +2,7 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Music'">
+  <meta name="description" content="My hobby_baking'">
   <meta name="keywords" content="trh, icd20">
   <meta name="author" content="Avery Moon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,8 @@
   <title>My first webpage, with properstyle</title>
   <link rel="icon" type="image/png" href="favicons/favicon.png">
 </head>
-<body style="background-color: rgb(174, 220, 241);">
+<body style="background-color: rgb(250, 248, 144);">
+  [Go to Music page](page2.html)
   <div style="width:100%; height:50px; border:solid 1px;">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
       <header class="mdl-layout__header">
@@ -22,7 +23,7 @@
           <div class="mdl-layout-spacer"></div>
           <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="index.html" style="color:rgb(255, 255, 255)">Home</a>
-            <a class="mdl-navigation__link" href="page2.html" style="color:rgb(253, 253, 253)">music</a>
+            <a class="mdl-navigation__link" href="page2.html" style="color:rgb(255, 255, 255)">music</a>
             <a class="mdl-navigation__link" href="page3.html" style="color:rgb(255, 255, 255)">sport</a>
             <a class="mdl-navigation__link" href="page4.html" style="color:rgb(255, 255, 255)">baking</a>
           </nav>
@@ -31,7 +32,7 @@
       <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">HTML5 Tutorial</span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="index.html">home</a>
+          <a class="mdl-navigation__link" href="index.html">Home</a>
           <a class="mdl-navigation__link" href="page2.html">music</a>
           <a class="mdl-navigation__link" href="page3.html">sport</a>
           <a class="mdl-navigation__link" href="page4.html">baking</a>
@@ -40,21 +41,22 @@
     </div>
   </div>
   <div>
-    <h2 id="My-header">My hobby_Music</h2>
-    <p style="background-color: rgb(174, 220, 241);">Instruments flute, piano, guitar, viola</p>
-    <img src="../Final/images/music.jpg" alt="hobby">
+    <h1 id="My-header">My hobby_baking</h1>
+    <p style="background-color: rgb(250, 248, 144);">baking</p>
+    <img src="../Final/images/abking.jpg" alt="hobby">
     <p>
-    <p style="background-color: rgb(174, 220, 241);">flute</p>
-      <img src="../Final/images/flute.jpg" alt="hobby">
+    <p style="background-color: rgb(250, 248, 144);">cookies</p>
+    <img src="../Final/images/cookie.jpg" alt="hobby">
     </p>
-    <p style="background-color: rgb(174, 220, 241);">piano</p>
-    <img src="../Final/images/piano.jpg" alt="hobby">
+    <p style="background-color: rgb(250, 248, 144);">cake</p>
+    <img src="../Final/images/cake.jpg" alt="hobby">
     </p>
-    <p style="background-color: rgb(174, 220, 241);">guitar</p>
-    <img src="../Final/images/guitar.jpg" alt="hobby">
+    <p style="background-color: rgb(250, 248, 144);">bread</p>
+    <img src="../Final/images/bread.jpg" alt="hobby">
     </p>
-    <p style="background-color: rgb(174, 220, 241);">viola</p>
-    <img src="../Final/images/viola.jpg" alt="hobby">
+    <p style="background-color: rgb(250, 248, 144);">donut</p>
+    <img src="../Final/images/donut.jpg" alt="hobby">
+    </p>
     <!-- Expandable Textfield -->
     <form action="#">
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
@@ -67,34 +69,46 @@
         </div>
       </div>
     </form>
-    <ul>
-      <li>1. flute</li>
-      <li>2. piano</li>
-      <li>3. guitar</li>
-      <li>4. viola</li>
-    </ul>
+    <p style="background-color: rgb(253, 253, 253);">Search your hobby</p>
     <!-- FAB search button -->
-    <button id="searchButton" class="https://www.reddit.com/r/Music/comments/1hb8pp2/is_listening_to_music_still_considered_a_hobby/">
+    <button id="searchButton" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
       <i class="material-icons">search</i>
     </button>
 
     <button id="clearButton" class="mdl-button mdl-js-button">Clear</button>
-  </div>t
-    <!-- Colored raised button -->
-    <button id="myButton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-      Go to Google
+  </div>
+  <!-- Wide card with share menu button -->
+  <button id="goGoogleBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+    Go to Google
+  </button>
+
+  <script>
+  document.getElementById('goGoogleBtn').addEventListener('click', function() {
+    window.location.href = 'https://www.google.com';
+  });
+  </script>
+  </style>
+
+  <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Welcome</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      Find your hobby.
+      This website makes you find your new hobby.
+    </div>
+    <a href="https://www.google.com" target="_blank"
+      class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Get Started
+    </a>
+  </div>
+  <div class="mdl-card__menu">
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">share</i>
     </button>
-    
-    <script>
-      document.getElementById('myButton').addEventListener('click', function () {
-        window.location.href = 'https://www.google.com';
-      });
-    </script>
-    <script>
-      document.getElementById('myButton').addEventListener('click', function () {
-        alert('Button was clicked!');
-      });
-    </script>
+  </div>
+  </div>
+  <a href="./cities.html">Information about me</a>
   <!-- JavaScript -->
   <script>
     const button = document.getElementById('searchButton');
@@ -111,6 +125,7 @@
     clearButton.addEventListener('click', function () {
       input.value = '';
     });
+
   </script>
 </body>
 </html>

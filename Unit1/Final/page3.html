@@ -25,6 +25,7 @@
             <a class="mdl-navigation__link" href="index.html" style="color:rgb(255, 255, 255)">Home</a>
             <a class="mdl-navigation__link" href="page2.html" style="color:rgb(255, 255, 255)">Music</a>
             <a class="mdl-navigation__link" href="" style="color:rgb(255, 255, 255)">Sports</a>
+            <a class="mdl-navigation__link" href="page4.html" style="color:rgb(255, 255, 255)">baking</a>
           </nav>
         </div>
       </header>
@@ -35,6 +36,7 @@
           <a class="mdl-navigation__link" href="index.html">Home</a>
           <a class="mdl-navigation__link" href="page2.html">Music</a>
           <a class="mdl-navigation__link" href="page3.html">Sports</a>
+          <a class="mdl-navigation__link" href="page4.html">baking</a>
         </nav>
       </div>
     </div>
@@ -71,6 +73,20 @@
         </div>
       </div>
     </form>
+<button class="mdl-button mdl-js-button goGoogle">
+  Flat Button
+</button>
+<button class="mdl-button mdl-js-button goGoogle">
+  button
+</button>
+
+<script>
+  document.querySelectorAll('.goGoogle').forEach(button => {
+    button.addEventListener('click', () => {
+      window.location.href = 'https://www.outoftheboxcards.com/';
+    });
+  });
+</script>
         <ul>
           <li>1. soccer</li>
           <li>2. basketball</li>

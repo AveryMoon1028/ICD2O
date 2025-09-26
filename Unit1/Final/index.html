@@ -25,6 +25,7 @@
             <a class="mdl-navigation__link" href="index.html" style="color:rgb(255, 255, 255)">Home</a>
             <a class="mdl-navigation__link" href="page2.html" style="color:rgb(255, 255, 255)">music</a>
             <a class="mdl-navigation__link" href="page3.html" style="color:rgb(255, 255, 255)">sport</a>
+            <a class="mdl-navigation__link" href="page4.html" style="color:rgb(255, 255, 255)">baking</a>
           </nav>
         </div>
       </header>
@@ -34,6 +35,7 @@
           <a class="mdl-navigation__link" href="index.html">Home</a>
           <a class="mdl-navigation__link" href="page2.html">music</a>
           <a class="mdl-navigation__link" href="page3.html">sport</a>
+          <a class="mdl-navigation__link" href="page4.html">baking</a>
         </nav>
       </div>
     </div>
@@ -55,7 +57,8 @@
                 <p style="background-color: rgb(253, 253, 253);">instruments</p>
                 <img src="../Final/images/instrument(1).jpg" alt="hobby">
                 </p>
-<ul>
+    <input type="text" name="username" placeholder="Enter your favorite hobby">
+                <ul>
   <li>1. cooking</li>
   <li>2. sports</li>
   <li>3. drawing</li>
@@ -78,24 +81,22 @@
     <button id="searchButton" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
       <i class="material-icons">search</i>
     </button>
-
     <button id="clearButton" class="mdl-button mdl-js-button">Clear</button>
   </div>
   <!-- Wide card with share menu button -->
-  <style>
-    .demo-card-wide.mdl-card {
-      width: 512px;
-    }
-  
-    .demo-card-wide>.mdl-card__title {
-      color: #fff;
-      height: 176px;
-      background: url('../Final/images/more information.jpg') center / cover;
-    }
-  
-    .demo-card-wide>.mdl-card__menu {
-      color: #7e7b7b;
-    }
+  <button id="goGoogleBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+  Go to Google
+</button>
+<button id="goGoogleBtn" class="mdl-button mdl-js-button mdl-js-ripple-effect-button">
+  Click
+</button>
+<!-- Flat button with ripple -->
+</button>
+<script>
+  document.getElementById('goGoogleBtn').addEventListener('click', function() {
+    window.location.href = 'https://www.google.com';
+  });
+</script>
   </style>
   
   <div class="demo-card-wide mdl-card mdl-shadow--2dp">
@@ -120,20 +121,21 @@
         <a href="./cities.html">Information about me</a>
   <!-- JavaScript -->
   <script>
-    const button = document.getElementById('searchButton');
-    const input = document.getElementById('userInput');
+  const button = document.getElementById('searchButton');
+  const input = document.getElementById('userInput');
 
-    button.addEventListener('click', function () {
-      const q = (input.value || '').trim();
-      if (q) {
-        const url = 'https://www.google.com/search?q=' + encodeURIComponent(q);
-        window.open(url, '_blank');
-      }
-    });
-    const clearButton = document.getElementById('clearButton');
-    clearButton.addEventListener('click', function () {
-      input.value = '';
-    });
+  button.addEventListener('click', function () {
+    const q = (input.value || '').trim();
+    if (q) {
+      const url = 'https://www.google.com/search?q=' + encodeURIComponent(q);
+      window.open(url, '_blank');
+    }
+  });
+  const clearButton = document.getElementById('clearButton');
+  clearButton.addEventListener('click', function () {
+    input.value = '';
+  });
+
   </script>
 </body>
 </html>
